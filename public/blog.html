@@ -1,0 +1,25 @@
+<!--why not working
+<div>
+    <h1>{{blogData.title}}</h1>
+    <p>By: {{blogData.user.username}}</p>
+    <p>{{blogData.blog_body}}</p>
+    <p>{{blogData.createdAt}}</p>
+</div>
+
+{{#each blogData.comments}}
+{{>commentCard}}
+{{/each}}
+-->
+<form action="submit" id="reply-form">
+    <div>
+        <label for="reply-text">reply: </label>
+        <br>
+        <p name="reply-text" id="reply-text" cols="30" rows="10"></p>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<script src="../js/reply.js"></script>
+<script src="../js/logout.js"></script>
